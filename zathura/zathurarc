@@ -1,0 +1,28 @@
+map D set "first-page-column 1:1"
+map - zoom out
+map + zoom in
+map i recolor
+map <C-Space> toggle_statusbar
+
+set selection-clipboard clipboard
+set incremental-search "true"
+set font "FiraCode"
+set adjust-open "width"
+set window-title-basename "true"
+set statusbar-basename "true"
+set guioptions none
+set zoom-step 5
+
+set default-bg "rgba(0,0,0,.85)"
+
+set recolor-darkcolor "#c0caf5"
+set recolor-lightcolor "rgba(0,0,0,0)"
+
+set highlight-color "#c6b675"
+set highlight-active-color "#a0b77c"
+
+set inputbar-bg "#141412"
+set inputbar-fg "#e5e0c9"
+
+set recolor true
+map i recolor

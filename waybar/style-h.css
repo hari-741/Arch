@@ -1,0 +1,138 @@
+* {
+  font-family: "FiraCode";
+  font-weight: bold;
+  color: #cad3f5;
+  font-size: 13px;
+  border-radius: 15px;
+}
+
+window#waybar {
+  background: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#workspaces {
+  background: #24273a;
+  padding: 3px;
+  margin: 0px 0px 0px 5px;
+}
+
+#workspaces button {
+  padding: 0px 3px;
+  margin: 3px;
+  background-color: #8aadf4;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.empty {
+  background: #8aadf4;
+  opacity: 0.3;
+}
+
+#workspaces button:hover {
+  opacity: 0.7;
+  background-color: #8aadf4;
+}
+
+#workspaces button.visible {
+  min-width: 70px;
+  opacity: 1;
+  background: #8aadf4;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.urgent {
+  color: #755754;
+}
+
+#clock {
+  background: #24273a;
+  border-radius: 7px;
+  margin: 0px 5px;
+  padding: 7px;
+}
+
+#idle_inhibitor,
+#battery,
+#network,
+#pulseaudio,
+#backlight {
+  font-size: 27px;
+}
+
+#idle_inhibitor {
+  margin: 0px 20px 0px 10px;
+  color: #8aadf4;
+}
+#idle_inhibitor.activated {
+  color: #ad5d69;
+}
+
+#backlight {
+  margin: 0px 20px 0px 0px;
+}
+#backlight.high {
+  color: #8aadf4;
+}
+#backlight.mid {
+  color: #f5a97f;
+}
+#backlight.low {
+  color: #ad5d69;
+}
+
+#pulseaudio {
+  color: #8aadf4;
+  margin: 0px 20px 0px 1px;
+}
+#pulseaudio.muted {
+  color: #ad5d69;
+}
+
+#network {
+  margin: 0px 17px 0px 0px;
+}
+#network.wifi {
+  color: #8aadf4;
+}
+#network.ethernet {
+  color: #f5a97f;
+}
+#network.disconnected {
+  color: #ad5d69;
+}
+
+#battery {
+  font-size: 16px;
+  margin: 0px 3px 0px 3px;
+  color: #8aadf4;
+}
+#battery.warning {
+  color: #f5a97f;
+}
+#battery.critical {
+  color: #ad5d69;
+}
+#battery.charging {
+  color: #497964;
+}
+
+#power {
+  margin: 0px 0px 0px 15px;
+}
+#custom-shutdown {
+  font-size: 26px;
+  color: #ad5d69;
+  margin: 0px 15px 0px 0px;
+}
+#custom-reboot {
+  font-size: 26px;
+  color: #f5a97f;
+  margin: 0px 20px 0px 0px;
+}
+#custom-hibernate {
+  font-size: 26px;
+  color: #8aadf4;
+  margin: 0px 20px 0px 3px;
+}

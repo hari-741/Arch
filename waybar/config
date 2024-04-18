@@ -1,0 +1,193 @@
+{
+  "position": "left",
+  "id": "left",
+  "layer": "top",
+  "spacing": 0,
+  "margin": "10px 0px 10px 10px",
+  "modules-left": [
+    "hyprland/workspaces",
+    "clock"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "idle_inhibitor",
+    "group/light",
+    "group/audio",
+    "network",
+    "battery",
+    "group/power"
+  ],
+  "group/light": {
+    "orientation": "vertical",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "backlight",
+      "backlight/slider"
+    ]
+  },
+  "group/audio": {
+    "orientation": "vertical",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider"
+    ]
+  },
+  "group/power": {
+    "orientation": "vertical",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/shutdown",
+      "custom/hibernate",
+      "custom/reboot"
+    ]
+  },
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "*": 5
+    },
+    "format": "{icon}",
+    "format-icons": {
+      "1": "α",
+      "2": "β",
+      "3": "γ",
+      "4": "δ",
+      "5": "ε"
+    },
+    "on-click": "activate"
+  },
+  "clock": {
+    "timezone": "Asia/Kolkata",
+    "tooltip-format": "{:%A, %d %B}",
+    "format": "{:%I\n%M}"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "tooltip-format-activated": "Deactivated",
+    "tooltip-format-deactivated": "Activated",
+    "format-icons": {
+      "activated": "󰒳",
+      "deactivated": "󰒲"
+    }
+  },
+  "network": {
+    "format": "{icon}",
+    "format-icons": {
+      "wifi": [
+        ""
+      ],
+      "ethernet": [
+        "󰈀"
+      ],
+      "disconnected": [
+        "󰖪"
+      ],
+      "disabled": [
+        "󰲛"
+      ],
+      "linked": [
+        ""
+      ]
+    },
+    "tooltip-format": "{ifname}",
+    "tooltip-format-wifi": "{essid}",
+    "tooltip-format-ethernet": "{ifname} {ipaddr}",
+    "tooltip-format-linked": "{ifname} (No IP) "
+  },
+  "backlight/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "vertical",
+    "device": "acpi_video1"
+  },
+  "backlight": {
+    "scroll-step": 0,
+    "device": "acpi_video1",
+    "tooltip-format": "{percent}%",
+    "format": "{icon}",
+    "states": {
+      "low": 0,
+      "mid": 35,
+      "high": 70
+    },
+    "format-icons": [
+      "󰃞",
+      "󰃝",
+      "󰃠"
+    ]
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "vertical"
+  },
+  "pulseaudio": {
+    "scroll-step": 0,
+    "format": "{icon}",
+    "format-muted": "󰝟",
+    "format-bluetooth": "",
+    "format-bluetooth-muted": "󰂲",
+    "max-volume": 100,
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋎",
+      "phone": "",
+      "default": [
+        "",
+        "󰕾",
+        ""
+      ]
+    },
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
+    "tooltip-format": "{volume}%"
+  },
+  "battery": {
+    "states": {
+      "good": 80,
+      "warning": 35,
+      "critical": 15
+    },
+    "interval": 3,
+    "tooltip-format": "{capacity}%",
+    "format": "{icon}",
+    "format-plugged": "",
+    "format-charging": "󰂄",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "custom/shutdown": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "systemctl poweroff"
+  },
+  "custom/reboot": {
+    "format": "󰜉",
+    "tooltip": false,
+    "on-click": "systemctl reboot"
+  },
+  "custom/hibernate": {
+    "format": "󰤁",
+    "tooltip": false,
+    "on-click": "systemctl hibernate"
+  }
+}

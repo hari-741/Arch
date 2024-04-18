@@ -1,0 +1,32 @@
+[cursor.style]
+shape = "Beam"
+
+[font]
+size = 15
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "MesloLGS NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[window]
+opacity = 0.5
+
+[window.padding]
+x = 20
+y = 20
+
+[window.position]
+x = 7
+y = 7

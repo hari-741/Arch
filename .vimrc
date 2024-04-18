@@ -1,0 +1,16 @@
+set number
+set relativenumber
+set nocompatible
+set autoindent
+set nobackup
+syntax on
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set mouse=a
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+set hlsearch
+set history=1000

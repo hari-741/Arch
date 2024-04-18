@@ -1,0 +1,179 @@
+* {
+  font-family: "FiraCode";
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+window#waybar {
+  background: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid #8aadf4;
+  border-radius: 5px;
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces {
+  font-size: 20px;
+  background: #24273a;
+  color: #cad3f5;
+  border: 2px solid #8aadf4;
+  padding: 10px 0px 10px 0px;
+}
+#workspaces button.empty {
+  opacity: 0.5;
+}
+#workspaces button.visible {
+  opacity: 1;
+  color: #8aadf4;
+}
+
+#clock {
+  background: #24273a;
+  color: #cad3f5;
+  border: 2px solid #8aadf4;
+  margin: 15px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  font-size: 20px;
+}
+
+#idle_inhibitor,
+#battery,
+#network,
+#pulseaudio,
+#pulseaudio-slider,
+#backlight,
+#backlight-slider,
+#custom-shutdown,
+#custom-reboot,
+#custom-hibernate {
+  font-size: 27px;
+  background: #24273a;
+
+  border-left: 2px solid #8aadf4;
+  border-right: 2px solid #8aadf4;
+  border-radius: 0px;
+}
+
+#idle_inhibitor {
+  border-top: 2px solid #8aadf4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px 0px 5px 0px;
+  color: #8aadf4;
+}
+#idle_inhibitor.activated {
+  color: #ad5d69;
+}
+
+#backlight-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+#backlight-slider trough {
+  min-height: 80px;
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+#backlight-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+#backlight {
+  padding: 0px 0px 5px 0px;
+}
+#backlight.high {
+  color: #8aadf4;
+}
+#backlight.mid {
+  color: #f5a97f;
+}
+#backlight.low {
+  color: #ad5d69;
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+#pulseaudio-slider trough {
+  min-height: 80px;
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: black;
+}
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: green;
+}
+#pulseaudio {
+  color: #8aadf4;
+  padding: 0px 0px 5px 1px;
+}
+#pulseaudio.muted {
+  color: #ad5d69;
+}
+
+#network {
+  padding: 0px 0px 10px 0px;
+}
+#network.wifi {
+  color: #8aadf4;
+}
+#network.ethernet {
+  color: #f5a97f;
+}
+#network.disconnected {
+  color: #ad5d69;
+}
+
+#battery {
+  font-size: 18px;
+  padding: 0px 0px 10px 1px;
+  color: #8aadf4;
+}
+#battery.warning {
+  color: #f5a97f;
+}
+#battery.critical {
+  color: #ad5d69;
+}
+#battery.charging {
+  color: #497964;
+}
+
+#custom-shutdown {
+  border-bottom: 2px solid #8aadf4;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 24px;
+  color: #ad5d69;
+  padding: 0px 0px 10px 1px;
+}
+#custom-reboot {
+  font-size: 24px;
+  color: #f5a97f;
+  padding: 0px 0px 5px 1px;
+}
+#custom-hibernate {
+  font-size: 24px;
+  color: #8aadf4;
+  padding: 0px 0px 5px 1px;
+}

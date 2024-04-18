@@ -1,0 +1,104 @@
+format = """
+[](bg1)\
+$os\
+[ ](bg:bg1 fg:bg1)\
+[](bg:bgtxt fg:bg1)\
+$directory\
+[](bg:bg1 fg:bgtxt)\
+$git_branch\
+$git_status\
+[](bg:bgtxt fg:bg1)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$java\
+$haskell\
+$python\
+[](fg:bgtxt)\
+
+$line_break$character"""
+add_newline = false
+
+palette = 'qwerty'
+
+[palettes.qwerty]
+txt = '#cad3f5'
+bg1 = '#a3aed2'
+bgtxt = '#394260'
+
+[os]
+disabled = false
+style = "bg:bg1 fg:bgtxt"
+
+[os.symbols]
+Windows = "󰍲"
+Raspbian = "󰐿"
+Macos = "󰀵"
+Linux = "󰌽"
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+
+[directory]
+style = "fg:txt bg:bgtxt"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Pictures" = " "
+"Studies" = " "
+"Win" = " "
+
+[git_branch]
+symbol = ""
+format = '[[ $symbol $branch ](fg:bgtxt bg:bg1)]($style)'
+
+[git_status]
+format = '[[($all_status$ahead_behind )](fg:bgtxt bg:bg1)]($style)'
+
+[bun]
+symbol = "🍔"
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[c]
+symbol = " "
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[golang]
+symbol = ""
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[haskell]
+symbol = ""
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[java]
+symbol = " "
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[nodejs]
+symbol = ""
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[python]
+symbol = ""
+format = '[[ $symbol( $version) (\($virtualenv\))](fg:txt bg:bgtxt)]($style)'
+
+[rust]
+symbol = ""
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[zig]
+symbol = '⚡️ '
+format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+format = '[ 󱞩 ](bold fg:text)'

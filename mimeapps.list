@@ -1,0 +1,9 @@
+[Added Associations]
+application/json=code.desktop;
+image/jpeg=imv.desktop;imv-dir.desktop;
+image/png=imv.desktop;
+
+[Default Applications]
+image/jpeg=imv-dir.desktop
+image/png=imv.desktop
+application/pdf=org.pwmt.zathura.desktop
