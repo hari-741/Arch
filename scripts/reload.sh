@@ -2,5 +2,5 @@
 
 killall dunst
 dunst &
-shyprctl reload
+hyprctl reload
 notify-send "Ark" "Reloaded"

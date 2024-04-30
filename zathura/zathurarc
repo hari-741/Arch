@@ -18,9 +18,6 @@ set default-bg "rgba(0,0,0,.85)"
 set recolor-darkcolor "#c0caf5"
 set recolor-lightcolor "rgba(0,0,0,0)"
 
-set highlight-color "#c6b675"
-set highlight-active-color "#a0b77c"
-
 set inputbar-bg "#141412"
 set inputbar-fg "#e5e0c9"
 

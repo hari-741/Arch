@@ -110,7 +110,7 @@
     "device": "acpi_video1"
   },
   "backlight": {
-    "scroll-step": 0,
+    "scroll-step": 10,
     "device": "acpi_video1",
     "tooltip-format": "{percent}%",
     "format": "{icon}",
@@ -131,7 +131,7 @@
     "orientation": "vertical"
   },
   "pulseaudio": {
-    "scroll-step": 0,
+    "scroll-step": 10,
     "format": "{icon}",
     "format-muted": "󰝟",
     "format-bluetooth": "",

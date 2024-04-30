@@ -5,7 +5,7 @@
 # systemctl enable NetworkManager
 # systemctl enable sddm
 
-sudo pacman -S alacritty bat bleachbit brightnessctl btop blueman bluez bluez-utils chromium cups cups-pdf dialog dunst exfatprogs eza github-cli galculator gvfs gvfs-mtp guvcview hplip hyprland hyprpaper hypridle hyprlock libreoffice-fresh intel-media-driver imv less mpv neofetch ntfs-3g nvidia nwg-look pavucontrol pipewire-alsa pipewire-pulse  papirus-icon-theme polkit-gnome qt5-wayland qt5ct reflector sbctl starship system-config-printer thunar thunar-volman transmission-qt tldr  ttf-fira-code tumbler unrar ufw unzip vulkan-intel waybar xdg-desktop-portal-hyprland xdg-utils xorg-xhost zathura zathura-pdf-poppler zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
+sudo pacman -S alacritty bat bleachbit brightnessctl btop blueman bluez bluez-utils chromium cups cups-pdf dialog dunst exfatprogs eza github-cli galculator gvfs gvfs-mtp guvcview hplip hyprland hyprpaper hypridle hyprlock libreoffice-fresh intel-media-driver imv less mpv neofetch ntfs-3g nvidia nwg-look pavucontrol pipewire-alsa pipewire-pulse  papirus-icon-theme polkit-gnome qt5-wayland qt5ct reflector sbctl starship system-config-printer thunar thunar-volman transmission-qt tldr ttf-fira-code tumbler unrar ufw unzip vulkan-intel waybar xdg-desktop-portal-hyprland xdg-utils xorg-xhost zathura zathura-pdf-poppler zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 
 # sudo pacman -S alsa-utils clamav engrampa gparted grub-customizer gufw plymouth  qbittorrent thunar-archive-plugin timeshift tlp tlp-rdw waybar zram-generator zsh-theme-powerlevel10k
 
