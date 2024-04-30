@@ -3,7 +3,7 @@
 This is my personal arch dotfiles.
 I have not tested in any other system than my own.
 
-OS - Arch
+OS - Arch                                                                                                                                                                                                                                                
 WM - Hyprland
 Browser - Chromium
 Terminal - Alacritty
