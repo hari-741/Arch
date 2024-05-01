@@ -30,4 +30,8 @@ zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
-export LC_ALL=en_US.UTF-8
+
+[ -s "/home/hari/.bun/_bun" ] && source "/home/hari/.bun/_bun"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

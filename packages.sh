@@ -26,3 +26,5 @@ yay -S auto-cpufreq bibata-cursor-theme catppuccin-gtk-theme-macchiato envycontr
 # sudo systemctl start libvirtd
 
 # libvirt input wheel lp autologin hari power video storage audio
+
+curl -fsSL https://bun.sh/install | bash
