@@ -35,3 +35,6 @@ compinit
 
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Created by `pipx` on 2024-05-05 14:09:44
+export PATH="$PATH:/home/hari/.local/bin"

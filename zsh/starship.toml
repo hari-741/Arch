@@ -77,7 +77,7 @@ symbol = ""
 format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
 
 [java]
-symbol = " "
+symbol = ""
 format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
 
 [nodejs]
