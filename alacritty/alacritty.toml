@@ -2,22 +2,22 @@
 shape = "Beam"
 
 [font]
-size = 15
+size = 13
 
 [font.bold]
-family = "MesloLGS NF"
+family = "FiraCode Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "MesloLGS NF"
+family = "FiraCode Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "MesloLGS NF"
+family = "FiraCode Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "MesloLGS NF"
+family = "FiraCode Nerd Font"
 style = "Regular"
 
 [window]
@@ -25,7 +25,6 @@ opacity = 0.5
 
 [window.padding]
 x = 20
-y = 20
 
 [window.position]
 x = 7

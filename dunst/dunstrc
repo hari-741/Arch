@@ -13,7 +13,7 @@ offset = 10x10
 origin = right-top
 width = (300,500)
 height = (0,300)
-corner_radius = 15
+corner_radius = 10
 
 padding = 10
 horizontal_padding = 10
@@ -24,7 +24,7 @@ frame_color = "#8AADF4"
 separator_color= frame
 
 sort = update
-idle_threshold = 120
+idle_threshold = 30
 
 font = FiraCode Font 10
 format = "<b>%s</b>\n<i>%b</i>"
