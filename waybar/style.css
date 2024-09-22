@@ -1,7 +1,7 @@
 * {
   font-family: "FiraCode";
   font-weight: bold;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 window#waybar {
@@ -12,7 +12,7 @@ window#waybar {
 
 tooltip {
   background: rgba(43, 48, 59, 0.5);
-  border: 1px solid #8aadf4;
+  border: 2px solid #8aadf4;
   border-radius: 5px;
 }
 tooltip label {
@@ -20,7 +20,7 @@ tooltip label {
 }
 
 #workspaces {
-  font-size: 20px;
+  font-size: 17px;
   background: #24273a;
   color: #cad3f5;
   border: 2px solid #8aadf4;
@@ -40,7 +40,7 @@ tooltip label {
   border: 2px solid #8aadf4;
   margin: 15px 0px 0px 0px;
   padding: 10px 0px 10px 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #idle_inhibitor,
@@ -53,7 +53,7 @@ tooltip label {
 #custom-shutdown,
 #custom-reboot,
 #custom-hibernate {
-  font-size: 27px;
+  font-size: 25px;
   background: #24273a;
 
   border-left: 2px solid #8aadf4;
@@ -63,8 +63,8 @@ tooltip label {
 
 #idle_inhibitor {
   border-top: 2px solid #8aadf4;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 10px 0px 5px 0px;
   color: #8aadf4;
 }
@@ -125,14 +125,15 @@ tooltip label {
 }
 #pulseaudio {
   color: #8aadf4;
-  padding: 0px 0px 5px 1px;
+  padding: 0px 0px 5px 0px;
 }
 #pulseaudio.muted {
   color: #ad5d69;
 }
 
 #network {
-  padding: 0px 0px 10px 0px;
+  font-size: 24px;
+  padding: 0px 5px 5px 0px;
 }
 #network.wifi {
   color: #8aadf4;
@@ -145,8 +146,8 @@ tooltip label {
 }
 
 #battery {
-  font-size: 18px;
-  padding: 0px 0px 10px 1px;
+  font-size: 26px;
+  padding: 0px 0px 5px 0px;
   color: #8aadf4;
 }
 #battery.warning {
@@ -161,19 +162,14 @@ tooltip label {
 
 #custom-shutdown {
   border-bottom: 2px solid #8aadf4;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  font-size: 24px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 19px;
   color: #ad5d69;
-  padding: 0px 0px 10px 1px;
+  padding: 0px 4px 10px 0px;
 }
 #custom-reboot {
   font-size: 24px;
   color: #f5a97f;
-  padding: 0px 0px 5px 1px;
-}
-#custom-hibernate {
-  font-size: 24px;
-  color: #8aadf4;
   padding: 0px 0px 5px 1px;
 }

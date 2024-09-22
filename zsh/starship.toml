@@ -1,104 +1,99 @@
-format = """
-[](bg1)\
-$os\
-[ ](bg:bg1 fg:bg1)\
-[](bg:bgtxt fg:bg1)\
-$directory\
-[](bg:bg1 fg:bgtxt)\
-$git_branch\
-$git_status\
-[](bg:bgtxt fg:bg1)\
-$c\
-$rust\
-$golang\
-$nodejs\
-$java\
-$haskell\
-$python\
-[](fg:bgtxt)\
-
-$line_break$character"""
-add_newline = false
-
-palette = 'qwerty'
-
-[palettes.qwerty]
-txt = '#cad3f5'
-bg1 = '#a3aed2'
-bgtxt = '#394260'
+add_newline = true
 
 [os]
 disabled = false
-style = "bg:bg1 fg:bgtxt"
 
 [os.symbols]
-Windows = "󰍲"
-Raspbian = "󰐿"
-Macos = "󰀵"
-Linux = "󰌽"
-Amazon = ""
-Android = ""
-Arch = "󰣇"
+Amazon = " "
+Arch = " "
+Android = " "
+Debian = " "
+Fedora = " "
+NixOS = " "
+Ubuntu = " "
+Windows = " "
 
 [directory]
-style = "fg:txt bg:bgtxt"
-format = "[ $path ]($style)"
+read_only = " 󰌾"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
 "Downloads" = " "
+"NixConfig" = " "
 "Pictures" = " "
 "Studies" = " "
 "Win" = " "
 
-[git_branch]
-symbol = ""
-format = '[[ $symbol $branch ](fg:bgtxt bg:bg1)]($style)'
 
-[git_status]
-format = '[[($all_status$ahead_behind )](fg:bgtxt bg:bg1)]($style)'
+[aws]
+symbol = " "
 
 [bun]
-symbol = "🍔"
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+symbol = "🍔 "
 
 [c]
 symbol = " "
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+      
+[git_branch]
+symbol = " "
 
 [golang]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+symbol = " "
 
 [haskell]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+symbol = " "
 
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+      
 [java]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[nix_shell] 
+symbol = " "
+      
 
 [nodejs]
 symbol = ""
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
 
+[package]
+symbol = "󰏗 "
+
+[php]
+symbol = " "
+      
+      
 [python]
-symbol = ""
-format = '[[ $symbol( $version) (\($virtualenv\))](fg:txt bg:bgtxt)]($style)'
+symbol = " "
 
 [rust]
-symbol = ""
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+symbol = " "
 
 [zig]
-symbol = '⚡️ '
-format = '[[ $symbol( $version) ](fg:txt bg:bgtxt)]($style)'
+symbol = "⚡️ "
 
 [line_break]
 disabled = false
-
-[character]
-disabled = false
-format = '[ 󱞩 ](bold fg:text)'

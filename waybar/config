@@ -1,6 +1,7 @@
 {
   "position": "left",
   "id": "left",
+  "width": 46,
   "layer": "top",
   "spacing": 0,
   "margin": "10px 0px 10px 10px",
@@ -47,7 +48,6 @@
     },
     "modules": [
       "custom/shutdown",
-      "custom/hibernate",
       "custom/reboot"
     ]
   },
@@ -143,8 +143,8 @@
       "phone": "",
       "default": [
         "",
-        "󰕾",
-        ""
+        "",
+        "󰕾"
       ]
     },
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -163,16 +163,11 @@
     "format-plugged": "",
     "format-charging": "󰂄",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "󰁻",
+      "󰁽",
+      "󰁿",
+      "󰂁",
+      "󰁹"
     ]
   },
   "custom/shutdown": {
@@ -184,10 +179,5 @@
     "format": "󰜉",
     "tooltip": false,
     "on-click": "systemctl reboot"
-  },
-  "custom/hibernate": {
-    "format": "󰤁",
-    "tooltip": false,
-    "on-click": "systemctl hibernate"
   }
 }
