@@ -5,7 +5,7 @@
 # systemctl enable NetworkManager
 # systemctl enable sddm
 
-sudo pacman -S alacritty bat bleachbit brightnessctl btop blueman bluez bluez-utils dialog dunst exfatprogs eza github-cli galculator gvfs gvfs-mtp guvcview hyprland hyprpaper hypridle hyprlock libreoffice-fresh intel-media-driver imv less mpv fastfetch ntfs-3g nwg-look pavucontrol pipewire-alsa pipewire-pulse  papirus-icon-theme polkit-gnome qt5-wayland qt5ct reflector starship thunar thunar-volman transmission-qt tldr ttf-fira-code tumbler unrar ufw unzip vulkan-intel waybar xdg-desktop-portal-hyprland xdg-utils xorg-xhost zathura zathura-pdf-poppler zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
+sudo pacman -S alacritty bat bleachbit brightnessctl btop blueman bluez bluez-utils dialog dunst exfatprogs eza github-cli galculator gvfs gvfs-mtp guvcview hyprland hyprpaper hypridle hyprlock libreoffice-fresh intel-media-driver imv less mpv fastfetch ntfs-3g nwg-look pavucontrol pipewire-alsa pipewire-pulse papirus-icon-theme polkit-gnome qt5-wayland qt5ct reflector starship thunar thunar-volman transmission-qt tldr ttf-fira-code tumbler unrar ufw unzip vulkan-intel waybar xdg-desktop-portal-hyprland xdg-utils xorg-xhost zathura zathura-pdf-poppler zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting
 
 # sudo pacman -S alsa-utils clamav cups cups-pdf engrampa gparted grub-customizer gufw hplip nvidia plymouth qbittorrent sbctl system-config-printer thunar-archive-plugin timeshift tlp tlp-rdw zram-generator zsh-theme-powerlevel10k
 

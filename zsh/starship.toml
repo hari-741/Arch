@@ -30,9 +30,6 @@ truncation_symbol = "…/"
 [aws]
 symbol = " "
 
-[bun]
-symbol = "🍔 "
-
 [c]
 symbol = " "
 
@@ -86,7 +83,7 @@ symbol = "󰏗 "
 symbol = " "
       
 [python]
-symbol = " "
+symbol = " "
 
 [rust]
 symbol = " "

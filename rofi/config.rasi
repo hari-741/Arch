@@ -4,7 +4,7 @@ configuration {
     terminal:                   "alacritty";    
 }
 
-@theme ".config/rofi/arc"
+@theme "~/.config/rofi/arc"
 
 * {
     font:                        "FiraCode Font 11";

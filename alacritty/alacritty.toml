@@ -2,7 +2,7 @@
 shape = "Beam"
 
 [font]
-size = 13
+size = 9
 
 [font.bold]
 family = "MesloLGS NF"
