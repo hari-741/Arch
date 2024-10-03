@@ -79,7 +79,7 @@ layouts = [layout.Columns(
 
 widget_defaults = dict(
     font="FiraCode",
-    fontsize=12,
+    fontsize=14,
     padding=3,
 )
 extension_defaults = widget_defaults.copy()
@@ -93,15 +93,52 @@ screens = [
         # left = bar.Gap(10),
         top =bar.Bar(
             [
-                widget.GroupBox(),
-                # widget.Gap(),
-                widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
+                widget.Spacer(
+                    length=10,
+                ),
+                widget.GroupBox(
+                    borderwidth=0,
+                    padding=7,
+                    disable_drag=True,
+                    active="#cba6f7",
+                    inactive="#585b70",
+                    block_highlight_text_color="#89b4fa",
+                ),
+                widget.Spacer(),
+                widget.Clock(
+                    format="<b>%A, %d %B    %I:%M %p</b>",
+                    update_interval = 60.0,
+                ),
+                widget.Spacer(),
+                # widget.Systray(),
+                widget.Wlan(
+                    ethernet_interface="enp7s0",
+                    ethernet_message="",
+                    interface="wlp0s20f3",
+                    format='{essid} {percent:2.0%}'
+                ),
+                widget.PulseVolume(),
+                widget.DoNotDisturb(),
+                widget.Backlight(
+                    backlight_name='intel_backlight',
+                ),
+                widget.Volume(
+                ),
+                widget.Battery(
+                    format='{percent:2.0%}',
+                ),
+                widget.TextBox(
+                    '⏻',
+                    mouse_callbacks={
+                        'Button1': lazy.spawn('alacritty'),
+                    },
+                ),
+                widget.Spacer(
+                    length=17,
+                ),
             ],
             30,
-            # border_width=2,
-            # border_color="#89b4fa"
+            background="#1e1e2e",
         ),
         
         # x11_drag_polling_rate = 60,           You can uncomment this variable if you see that on X11 floating resize/moving is laggy
